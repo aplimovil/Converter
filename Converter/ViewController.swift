@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Object of model class Distance
+    var distance = Distance(miles: 1000)
+    @IBOutlet weak var milesTextField: UITextField!
+    @IBOutlet weak var kmTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Set values from model class
+        milesTextField.text = "\(distance.miles)"
+        kmTextField.text = "\(distance.km)"
     }
 
 
