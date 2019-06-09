@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     //Object of model class Distance
     var distance = Distance(miles: 1000)
     @IBOutlet weak var milesTextField: UITextField!
@@ -21,7 +21,20 @@ class ViewController: UIViewController {
         milesTextField.text = "\(distance.miles)"
         kmTextField.text = "\(distance.km)"
     }
-
-
+    
+    
+    @IBAction func convertToKm(_ sender: Any) {
+        if let miles = Double(milesTextField.text!) {
+            distance.miles = miles
+            kmTextField.text = "\(Int(distance.km))"
+        }
+    }
+    
+    @IBAction func convertToMiles(_ sender: Any) {
+        if let km = Double(kmTextField.text!) {
+            distance.km = km
+            milesTextField.text = "\(Int(distance.miles))"
+        }
+    }
 }
 

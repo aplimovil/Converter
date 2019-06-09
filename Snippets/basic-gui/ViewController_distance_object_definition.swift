@@ -24,7 +24,23 @@ class ViewController: UIViewController {
     
     //Object of model class Distance
     var distance = Distance(miles: 1000)
+    @IBAction func convertToMiles(_ sender: Any) {
+    }
+    @IBAction func convertToMiles(_ sender: Any) {
+    }
+    @IBAction func convertToMiles(_ sender: Any) {
+    }
     
+    @IBAction func convertToMiles(_ sender: Any) {
+    }
+    @IBAction func convertToMiles(_ sender: Any) {
+        @IBAction func convertToMiles(_ sender: Any) {
+        }
+        @IBAction func convertToMiles(_ sender: Any) {
+        }
+    }
+    @IBAction func convertToMiles(_ sender: Any) {
+    }
     /**************************** Add this code ***************************/
     
     override func viewDidLoad() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B04895522AC89C70044AD2B /* ViewController_conversion_methods_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B04895422AC89C70044AD2B /* ViewController_conversion_methods_addition.swift */; };
 		0B40CF2A22AC815D008935A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B40CF2922AC815D008935A8 /* AppDelegate.swift */; };
 		0B40CF2C22AC815D008935A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B40CF2B22AC815D008935A8 /* ViewController.swift */; };
 		0B40CF2F22AC815D008935A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B40CF2D22AC815D008935A8 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B04895422AC89C70044AD2B /* ViewController_conversion_methods_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_conversion_methods_addition.swift; sourceTree = "<group>"; };
 		0B40CF2622AC815D008935A8 /* Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B40CF2922AC815D008935A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B40CF2B22AC815D008935A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B04895322AC899C0044AD2B /* interaction */ = {
+			isa = PBXGroup;
+			children = (
+				0B04895422AC89C70044AD2B /* ViewController_conversion_methods_addition.swift */,
+			);
+			path = interaction;
+			sourceTree = "<group>";
+		};
 		0B40CF1D22AC815D008935A8 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		0B40CF3B22AC82FD008935A8 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				0B04895322AC899C0044AD2B /* interaction */,
 				0B40CF3C22AC830E008935A8 /* basic-gui */,
 			);
 			path = Snippets;
@@ -164,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B40CF4222AC8349008935A8 /* ViewController_outlets_initialization.swift in Sources */,
+				0B04895522AC89C70044AD2B /* ViewController_conversion_methods_addition.swift in Sources */,
 				0B40CF4422AC83D8008935A8 /* Distance.swift in Sources */,
 				0B40CF4022AC8349008935A8 /* Distance_class_model_definition.swift in Sources */,
 				0B40CF4122AC8349008935A8 /* ViewController_distance_object_definition.swift in Sources */,
@@ -315,7 +327,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				EXCLUDED_SOURCE_FILE_NAMES = "\"Snippets/basic-gui/*\"";
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"\"Snippets/basic-gui/*\"",
+					"\"Snippets/interaction/*\"",
+				);
 				INFOPLIST_FILE = Converter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,7 +348,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				EXCLUDED_SOURCE_FILE_NAMES = "\"Snippets/basic-gui/*\"";
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"\"Snippets/basic-gui/*\"",
+					"\"Snippets/interaction/*\"",
+				);
 				INFOPLIST_FILE = Converter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
